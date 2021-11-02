@@ -10,7 +10,7 @@ class Box extends React.Component {
           {this.props.icon}
         </span>
         <p>{this.props.value}{this.props.unit}</p>
-        {this.props.unit != checkWater ?(<input type ="range" min= {this.props.min} max={this.props.max} onChange={this.props.onChange} ></input>):(<></>)}
+        {this.props.unit != checkWater &&(<input type ="range" min= {this.props.min} max={this.props.max} onChange={this.props.onChange} ></input>)}
       </div>
     )
   }
